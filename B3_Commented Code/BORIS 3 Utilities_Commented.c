@@ -14,12 +14,25 @@ extern B3_LAST_ERROR gLastError;
 
 int CVICALLBACK CheckSumCalc(void *outputDest, char *outputString);
 
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+//  FUNCTION NAME: Get Last Error
+//	DESCRIPTION: Simply copies te last error in the
+//			global last error variable to the pointer.
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 void B3_GetLastError(B3_LAST_ERROR *lastError)
 {
 	*lastError = gLastError;
 	return;
 }
 
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+//  FUNCTION NAME: Load Ini File
+//	DESCRIPTION: Load the user-editable INI file
+//      into appropriate system variables according
+//			to the 'tag' name of the line in ini file.
+//			The order of items loaded in:
+//				- 
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 int B3_LoadIni(char *path, B3_SYSTEM_INFO *system)
 {
 	IniText iniText;
@@ -37,7 +50,7 @@ int B3_LoadIni(char *path, B3_SYSTEM_INFO *system)
 
 	Ini_DisableSorting (iniText);
 
-	stat = Ini_ReadFromFile (iniText, path);
+	stat =  (iniText, path);
 
 	if (stat != 0)
 	{
@@ -570,6 +583,11 @@ int B3_LoadIni(char *path, B3_SYSTEM_INFO *system)
 			funcStat = stat;
 			goto EXIT;
 		}
+		// ######################### Using Station For-Loop ################################
+		// #################################################################################
+		// #########################  Add Actuators Here! ##################################
+		// #################################################################################
+		// #################################################################################
 	}
 
 	strcpy(section, "DIGITAL_IN_IO_MAP");
@@ -617,6 +635,11 @@ int B3_LoadIni(char *path, B3_SYSTEM_INFO *system)
 				funcStat = stat;
 				goto EXIT;
 			}
+			// ######################### Using Station For-Loop ################################
+			// #################################################################################
+			// #########################  Add Switches Here! ###################################
+			// #################################################################################
+			// #################################################################################
 		}
 	}
 
@@ -1003,6 +1026,11 @@ int B3_SaveIni(char *path, B3_SYSTEM_INFO *system)
 			funcStat = stat;
 			goto EXIT;
 		}
+	  // ######################### Using Station For-Loop ################################
+		// #################################################################################
+		// #########################  Add Actuators Here! ##################################
+		// #################################################################################
+		// #################################################################################
 	}
 
 	strcpy(section, "DIGITAL_IN_IO_MAP");
@@ -1035,6 +1063,11 @@ int B3_SaveIni(char *path, B3_SYSTEM_INFO *system)
 				funcStat = stat;
 				goto EXIT;
 			}
+		  // #################################################################################
+			// #################################################################################
+			// #########################  Add Switches Here! ###################################
+			// #################################################################################
+			// #################################################################################
 		}
 	}
 
