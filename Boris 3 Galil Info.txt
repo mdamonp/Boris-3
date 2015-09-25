@@ -1,0 +1,28 @@
+Boris 3 Galil Info
+
+Translator IO Assignments:
+
+Digital In:
+1 - Jog Up (toggle)
+2 - Jog Down (toggle)
+3 - Pendant Select
+4 - Translator Ready
+5 - Installed at Station
+6 - Translator In Position
+7 - Stop operation or reset error condition
+8 - Manual Home
+
+Digital Out:
+1 - Pendant Selected
+2 - Translator Ready
+3 - Amplifier Enabled
+
+Analog In:
+1 - Load Cell (Gain - (1000.0/3.0190) pounds/volt)
+
+Motor Information:
+
+Encoder Resolution - 8192 counts/rev
+Screw Gain - 0.1"/rev
+Max. Speed - 75 ipm
+Max. RPM - 750 rpm

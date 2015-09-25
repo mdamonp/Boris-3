@@ -1,0 +1,17 @@
+<registry>
+  <!-- 
+  Controller connection data for DMC32.dll OS Upgrade Version.         
+  This XML file replaces the Microsoft Windows Registry entries used    
+  by the legacy versions of DMC32.dll.                                  
+  
+  "number" attribute of controller tag maps to usController argument of DMCOpen().
+  "sendcfi" tag is used only by the "SmartTerm" era Ethernet default.
+   -->
+  <version>1</version>
+  <controllers>
+  	<controller number="1">
+      <address>-a 192.168.123.246</address>
+      <sendcfi>false</sendcfi>
+    </controller>
+  </controllers>
+</registry>
