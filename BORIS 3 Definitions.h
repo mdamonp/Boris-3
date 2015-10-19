@@ -184,6 +184,7 @@ typedef struct b3LoadLimitTranslateMethodInfo
 	double velocityInIPS;
 	double maxDisplacementInInches;
 	double loadLimitInPounds;
+	double stationNum; 
 } B3_LOAD_LIMIT_TRANSLATE_METHOD_INFO;
 
 typedef struct b3ProceduerInfo

@@ -1,0 +1,64 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\Program Files (x86)\\Galil\\dmc32osu\\lib"
+	"c:\\Program Files\\Doyle Solutions Utilities"
+	"c:\\Program Files (x86)\\Galil\\dmc32osu\\bin\\x64"
+	"c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files\\IVI Foundation\\VISA\\win64\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2013\\toolslib\\toolbox"
+	;
+include Jamfile_instr ;
+LOCATE on "BORIS 3 Definitions.h" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3" ;
+LOCATE on "BORIS 3 Utilities.c" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3" ;
+LOCATE on "BORIS 3 Utilities.h" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3" ;
+LOCATE on "BORIS 3.c" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3" ;
+LOCATE on "BORIS 3.h" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3" ;
+LOCATE on "Galil Commands.c" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\Galil Commands" ;
+LOCATE on "Galil Commands.h" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\Galil Commands" ;
+Object "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 Utilities.obj" : "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\BORIS 3 Utilities.c" ;
+FILENUM on "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 Utilities.obj" = 1 ;
+DEFPROTS on "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 Utilities.obj" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 Utilities.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 Utilities.obj" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 Utilities.obj.out" ;
+PrjObjects += "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 Utilities.obj" ;
+Object "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3.obj" : "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\BORIS 3.c" ;
+FILENUM on "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3.obj" = 2 ;
+DEFPROTS on "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3.obj" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3.obj" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3.obj.out" ;
+PrjObjects += "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3.obj" ;
+Object "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\Galil Commands.obj" : "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\Galil Commands\\Galil Commands.c" ;
+FILENUM on "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\Galil Commands.obj" = 3 ;
+DEFPROTS on "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\Galil Commands.obj" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\Galil Commands.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\Galil Commands.obj" = "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\Galil Commands.obj.out" ;
+PrjObjects += "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\Galil Commands.obj" ;
+Object "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\resources.res" : "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\resources.in.rc" ;
+MainFromObjects "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 (DEBUG64).exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 (DEBUG64).exe" : "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\link_options.txt" ;
+Depends "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 (DEBUG64).exe" : "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\resources.res" ;
+Depends "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\resources.res" :  "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\BORIS 3.uir" ;
+Depends all : "c:\\Users\\michaelp\\OneDrive\\OneDrive - Applied Fiber Manufacturing\\1222 - Boris\\Boris 3\\Boris 3\\Boris 3\\cvibuild.BORIS 3\\Debug64\\BORIS 3 (DEBUG64).exe" ;

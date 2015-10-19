@@ -5523,6 +5523,12 @@ int CVICALLBACK RemoveSerialNumber (int panel, int control, int event,
 	return 0;
 }
 
+
+// ###################################
+// ###################################
+// Add Switch Control In This Function
+// ###################################
+// ###################################
 int32 CVICALLBACK DinChangeDetectionCallback(TaskHandle taskHandle, int32 signalID, void *callbackData)
 {
 	int32 error=0;

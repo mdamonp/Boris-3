@@ -1,0 +1,56 @@
+[GALIL_CMD_Open]
+Class="Function"
+Prototype="int GALIL_CMD_Open(const unsigned short controllerId) __declspec(dllexport);"
+
+[GALIL_CMD_Close]
+Class="Function"
+Prototype="int GALIL_CMD_Close() __declspec(dllexport);"
+
+[GALIL_CMD_TranslateCmd]
+Class="Function"
+Prototype="int GALIL_CMD_TranslateCmd(int mode, const double velocityInIPM, const double distanceInInches, const double loadInPounds, const double stationNum, const double timeout, int *const cmdStat) __declspec(dllexport);"
+
+[GALIL_CMD_ReadMachineData]
+Class="Function"
+Prototype="int GALIL_CMD_ReadMachineData(int *const state, double *const aPosInInches, double *const loadInPounds, double *const timeStamp, const double timeout, int *const cmdStat) __declspec(dllexport);"
+
+[GALIL_CMD_VersionInfo]
+Class="Function"
+Prototype="int GALIL_CMD_VersionInfo(char *const version, const double timeout, int *const cmdStat) __declspec(dllexport);"
+
+[GALIL_CMD_SystemErrorInfo]
+Class="Function"
+Prototype="int GALIL_CMD_SystemErrorInfo(int *const errorNum, int *const errorLine, int *const errorThread, const double timeout, int *const cmdStat) __declspec(dllexport);"
+
+[GALIL_CMD_GetLastErrorInfo]
+Class="Function"
+Prototype="void GALIL_CMD_GetLastErrorInfo(struct _GALIL_CMD_ERROR_INFO *const errorInfo) __declspec(dllexport);"
+
+[_GALIL_SendCmdMsg]
+Class="Function"
+Prototype="int _GALIL_SendCmdMsg(int cmd, double *const arg, const unsigned short argCnt, double *const result, const unsigned short resultCnt, const double timeout, int *const cmdStat);"
+
+[_GALIL_ReadArray]
+Class="Function"
+Prototype="int _GALIL_ReadArray(char *const arrayName, double *const arg, const unsigned short argCnt, const double timeout);"
+
+[_GALIL_WriteArray]
+Class="Function"
+Prototype="int _GALIL_WriteArray(char *const arrayName, double *const arg, const unsigned short argCnt, const double timeout);"
+
+[_GALIL_CMD_QueueErrorInfo]
+Class="Function"
+Prototype="void _GALIL_CMD_QueueErrorInfo(const char *const function, const int line, const int errorCode, const char *const errorMsg);"
+
+[_GALIL_CMD_QueueErrorInfoVarArgs]
+Class="Function"
+Prototype="void _GALIL_CMD_QueueErrorInfoVarArgs(const char *const function, const int line, const int errorCode, char *fmt, ...);"
+
+[_GALIL_Delay]
+Class="Function"
+Prototype="void _GALIL_Delay(const double delayTime);"
+
+[_GALIL_FilterMsg]
+Class="Function"
+Prototype="void _GALIL_FilterMsg(char *input, char *output);"
+

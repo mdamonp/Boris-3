@@ -1,0 +1,160 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[MAIN_MENU_SystemExit]
+Class="Function"
+Prototype="void MAIN_MENU_SystemExit(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ExitApp]
+Class="Function"
+Prototype="int ExitApp(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[EnterSerialNumberOk]
+Class="Function"
+Prototype="int EnterSerialNumberOk(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[EnterSerialNumberCancel]
+Class="Function"
+Prototype="int EnterSerialNumberCancel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[B3StationControl]
+Class="Function"
+Prototype="int B3StationControl(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[LoadProcedure]
+Class="Function"
+Prototype="int LoadProcedure(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[EnterSerialNumber]
+Class="Function"
+Prototype="int EnterSerialNumber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DoneCallback]
+Class="Function"
+Prototype="long DoneCallback(void *taskHandle, long status, void *callbackData);"
+
+[PANEL_MENU_STATION_Add]
+Class="Function"
+Prototype="void PANEL_MENU_STATION_Add(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[PANEL_MENU_STATION_Remove]
+Class="Function"
+Prototype="void PANEL_MENU_STATION_Remove(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[MAIN_MENU_PANEL_Manage]
+Class="Function"
+Prototype="void MAIN_MENU_PANEL_Manage(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ClosePanelMgmtPanel]
+Class="Function"
+Prototype="int ClosePanelMgmtPanel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ManagePanels]
+Class="Function"
+Prototype="int ManagePanels(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ProcessStatusAlert]
+Class="Function"
+Prototype="int ProcessStatusAlert(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TempControlStateEngine]
+Class="Function"
+Prototype="long TempControlStateEngine(int operation, int panelIndex, int stationIndex);"
+
+[B3SystemControl]
+Class="Function"
+Prototype="long B3SystemControl(int operation, int opId, int state);"
+
+[GalilAsyncCallback]
+Class="Function"
+Prototype="int GalilAsyncCallback(int reserved, int timerId, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PanelAutoArrange]
+Class="Function"
+Prototype="void PanelAutoArrange();"
+
+[ResizeStripChart]
+Class="Function"
+Prototype="int ResizeStripChart(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CloseAbout]
+Class="Function"
+Prototype="int CloseAbout(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DisplayAbout]
+Class="Function"
+Prototype="void DisplayAbout(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ShowDisclaimer]
+Class="Function"
+Prototype="int ShowDisclaimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CloseDisclaimer]
+Class="Function"
+Prototype="int CloseDisclaimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PanelStatusUpdate]
+Class="Function"
+Prototype="void PanelStatusUpdate(int panelIndex);"
+
+[BuildRunTimeStr]
+Class="Function"
+Prototype="void BuildRunTimeStr(int panelIndex, int stationIndex, char *timeStr);"
+
+[RemoveProcedure]
+Class="Function"
+Prototype="int RemoveProcedure(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RemoveSerialNumber]
+Class="Function"
+Prototype="int RemoveSerialNumber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DinChangeDetectionCallback]
+Class="Function"
+Prototype="long DinChangeDetectionCallback(void *taskHandle, long signalID, void *callbackData);"
+
+[DaqMXTempDeviceReadCallback]
+Class="Function"
+Prototype="long DaqMXTempDeviceReadCallback(void *taskHandle, long everyNsamplesEventType, unsigned long nSamples, void *callbackData);"
+
+[ChangeSetPoint]
+Class="Function"
+Prototype="int ChangeSetPoint(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ProcessStatusError]
+Class="Function"
+Prototype="int ProcessStatusError(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DeferredCallToB3StationControl]
+Class="Function"
+Prototype="void DeferredCallToB3StationControl(void *data);"
+
+[CheckGalilCommConnection]
+Class="Function"
+Prototype="int CheckGalilCommConnection(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ThermalSimulatorAsyncCallback]
+Class="Function"
+Prototype="int ThermalSimulatorAsyncCallback(int reserved, int timerId, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CancelAuthorization]
+Class="Function"
+Prototype="int CancelAuthorization(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ProcessPin]
+Class="Function"
+Prototype="int ProcessPin(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CancelChartScale]
+Class="Function"
+Prototype="int CancelChartScale(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SetNewScale]
+Class="Function"
+Prototype="int SetNewScale(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ResetScale]
+Class="Function"
+Prototype="int ResetScale(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

@@ -1,6 +1,6 @@
-#define INSTALL_THERMAL_SIMULATOR
-#define INSTALL_TRANSLATOR_SIMULATOR
-#define SIM_ASYNC_TIMER_PERIOD	0.1
+//#define INSTALL_THERMAL_SIMULATOR
+//#define INSTALL_TRANSLATOR_SIMULATOR
+//#define SIM_ASYNC_TIMER_PERIOD	0.1
 
 #include "Galil Commands.h"
 #include <formatio.h>
@@ -3210,6 +3210,7 @@ int32 TempControlStateEngine(int operation, int panelIndex, int stationIndex)
 						double velocityInIPS = 0.0;
 						double distanceInInches = 0.0;
 						double loadInPounds = 0.0;
+						double stationNum = 0.0;
 
 						switch (gsSystem.panel[panelIndex].procedure.translationMethod)
 						{
@@ -3218,6 +3219,7 @@ int32 TempControlStateEngine(int operation, int panelIndex, int stationIndex)
 								velocityInIPS = gsSystem.panel[panelIndex].procedure.fixedLengthTranslationMethodInfo.velocityInIPS;
 								distanceInInches = gsSystem.panel[panelIndex].procedure.fixedLengthTranslationMethodInfo.displacementInInches;
 								loadInPounds = gsSystem.panel[panelIndex].procedure.fixedLengthTranslationMethodInfo.maxLoadLimitInPounts;
+								stationNum = (panelIndex * 4) + stationIndex - 1 ; // Calculates station #0-19 for 4-station panels
 								break;
 
 							default:
@@ -3225,6 +3227,7 @@ int32 TempControlStateEngine(int operation, int panelIndex, int stationIndex)
 								velocityInIPS = gsSystem.panel[panelIndex].procedure.loadLimitTranslateMethodInfo.velocityInIPS;
 								distanceInInches = gsSystem.panel[panelIndex].procedure.loadLimitTranslateMethodInfo.maxDisplacementInInches;
 								loadInPounds = gsSystem.panel[panelIndex].procedure.loadLimitTranslateMethodInfo.loadLimitInPounds;
+								stationNum = (panelIndex * 4) + stationIndex - 1 ; // Calculates station #0-19 for 4-station panels
 								break;
 
 						}
@@ -3248,10 +3251,12 @@ int32 TempControlStateEngine(int operation, int panelIndex, int stationIndex)
 #ifndef INSTALL_TRANSLATOR_SIMULATOR
 						//CmtGetLock (gsGalilAsyncThreadLock);
 						{
+
 							stat = GALIL_CMD_TranslateCmd(mode,
 												   velocityInIPS,
 												   distanceInInches,
 												   loadInPounds,
+												   stationNum,
 												   0.1,
 												   &cmdStat);
 						}

@@ -1,0 +1,20 @@
+BORIS 3 Utilities.obj
+BORIS 3.obj
+Galil Commands.obj
+cvi.lib
+analysis.lib
+NIDAQmx.lib
+cvistart.lib
+asynctmr.obj
+DMC32.lib
+DSUtilities.lib
+inifile.obj
+kernel32.lib
+toolbox.obj
+advapi32.lib
+cviauto.lib
+gdi32.lib
+user32.lib
+EXE Symbol Module
+Exports Module
+Resource Module

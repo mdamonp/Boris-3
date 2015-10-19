@@ -1,0 +1,48 @@
+BORIS 3 GALIL COMMANDS CHANGE LOG
+
+10/2/15 - By Michael Prutsman (V1.3.1)
+			* all Line #s from Original "Galil Commands.dmc"
+
+  - Changed: size of Translation Data Array from 4 to 5 [L80]
+  - Added: Execution of #CONNECT Program (Process #4) after Arrays have been cleared [L194]
+  - Added: #INIT3 flag [L194]
+  - Added: Wait for end of RIO connection program [L194]
+		    	WT 10
+				JP #INIT3, _XQ4>0
+  -	Added: Halt Command for Connection Process #4
+  - Added: RIO TCP/IP Error code to #CMDERR sub After L274
+  - Added: Translation Station ID in #FC1 After L299
+		    TRNDAT[3]=LOCARG[3] ' Station ID
+  - Added: Translation Station ID in #FC2 After L350
+		    TRNDAT[3]=LOCARG[3] ' Station ID
+  - Added: Call for new #SUPPORT inside TRANSA1 (L4530), Before status change
+			JP #SUPPORT
+			WT 10
+  - Added: Call for new #SUPPORT inside TRANSB1 (L472) for Load Limit)
+			JP #SUPPORT
+			WT 10
+  - Added: Call for new #SUPPORT inside TRANSA1 (L479) for Position Limit
+			JP #SUPPORT
+			WT 10
+  - Added: #SUPPORT Sub at EOF (Contains #BUTTON)
+  - Added: #TCPERR at EOF for RIO Connection Errors
+  - Added: #CONNECT sub at EOF for RIO Modbus connection Setup
+		   - Open IP Handle for axis H
+		   - Modbus over IP at 192.168.123.247
+				"IHH= 192,168,123,247<502>2"
+		   - On failure, Galil knows to automatically go to #TCPERR
+		   - On failure, Message will be displayed, along with Connection status list.
+
+	10/19/15 - By Michael Prutsman (V1.3.2)
+		* Lines based on "Galil Commands Modified_3.1"
+
+		- Added #support call to Transa1 Load Trip. (L460)
+		- Added #support call to Transa if No Load Check condition set. (L451)
+		- L303: Changed to ARGCNT<>4
+		- L311: Changed 8000 -> 8001
+		- L355: Changed to ARGCNT<>4
+		- L363: Changed 8000 -> 8001
+		- L467: Changed JP -> JS
+		- L487: Changed JP -> JS
+		- L496: Changed JP -> JS
+		- L896: Changed 0 -> 1

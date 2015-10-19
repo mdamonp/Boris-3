@@ -31,7 +31,22 @@ void B3_GetLastError(B3_LAST_ERROR *lastError)
 //      into appropriate system variables according
 //			to the 'tag' name of the line in ini file.
 //			The order of items loaded in:
-//				- 
+//				- Version Number
+//				- Main Procedure directory
+//				- Graph Enable Status
+//				- Logging directory
+//				- Galil Device ID
+//				- Max Load for Translator complete
+//				- Panel Active
+//				- Panel Procedure Path
+//				- Station Active
+//				- temperature DAQ: Sample ratePerChan
+//				- temperature DAQ: Filter Level
+//				- Temp I/O Map
+//				- Room, Box, and Station Temps
+//				- Digital Out Map
+//				- Digital In Map
+//				- Temp Calibration  
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 int B3_LoadIni(char *path, B3_SYSTEM_INFO *system)
 {

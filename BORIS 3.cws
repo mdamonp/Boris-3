@@ -1,10 +1,10 @@
 [Workspace Header]
-Version = 1302
+Version = 1500
 Pathname Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
 Pathname Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3.cws"
-CVI Dir = "/c/program files (x86)/national instruments/cvi2013"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2015"
 CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
-CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2013"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2015"
 CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
 IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
 IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
@@ -13,11 +13,6 @@ VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
 Number of Projects = 2
 Active Project = 1
 Project 0001 = "BORIS 3.prj"
-Project 0001 Collapsed = True
-Project 0001 Folder Instrument Files Collapsed = True
-Project 0001 FolderId 3 Collapsed = True
-Project 0001 Folder Library Files Collapsed = True
-Project 0001 FolderId 4 Collapsed = True
 Project 0002 Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
 Project 0002 Line0002 = "oris 3/Boris 3/Boris 3 Procedure Editor/Boris 3 Procedure Editor.prj"
 Project 0002 Collapsed = True
@@ -26,11 +21,11 @@ Project 0002 FolderId 3 Collapsed = True
 Project 0002 Folder Library Files Collapsed = True
 Project 0002 FolderId 4 Collapsed = True
 Drag Bar Left = 224
-Window Top = 87
+Window Top = 109
 Window Left = 121
-Window Bottom = 879
+Window Bottom = 901
 Window Right = 1381
-Maximized = True
+Maximized = False
 Maximized Children = True
 Max32 Number Of Errors = 20
 Track Include File Dependencies = True
@@ -43,14 +38,14 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 2
+Number of Opened Files = 8
 Window Confinement Region Enabled = True
 MainColumnWidth = 207
 FileDateColumnWidth = 70
 FileSizeColumnWidth = 70
 
 [Project Header 0001]
-Version = 1302
+Version = 1500
 Don't Update DistKit = False
 Platform Code = 4
 Build Configuration = "Release64"
@@ -59,7 +54,7 @@ Batch Build Release = False
 Batch Build Debug = False
 
 [Project Header 0002]
-Version = 1302
+Version = 1500
 Don't Update DistKit = False
 Platform Code = 4
 Build Configuration = "Debug64"
@@ -68,15 +63,15 @@ Batch Build Release = False
 Batch Build Debug = False
 
 [File 0001]
-Path = "/c/Program Files (x86)/National Instruments/CVI2013/toolslib/toolbox/asynctmr.fp"
+Path = "/c/program files (x86)/national instruments/cvi2015/toolslib/toolbox/asynctmr.fp"
 File Type = "Function Panel"
-Disk Date = 3486517200
+Disk Date = 3517448400
 In Projects = "1,"
 
 [File 0002]
-Path = "/c/Program Files (x86)/National Instruments/CVI2013/toolslib/toolbox/inifile.fp"
+Path = "/c/program files (x86)/national instruments/cvi2015/toolslib/toolbox/inifile.fp"
 File Type = "Function Panel"
-Disk Date = 3486517200
+Disk Date = 3517448400
 In Projects = "1,2,"
 
 [File 0003]
@@ -94,13 +89,13 @@ Line Tags = "553,1043,"
 Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
 Path Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3.c"
 File Type = "CSource"
-Disk Date = 3525698493
+Disk Date = 3527877799
 In Projects = "1,"
 Window Top = 312
 Window Left = 154
-Window Z-Order = 2
-Source Window State = "1,5891,5891,5891,7,32,32,0,0,76,0,2966,0,3085,55,25,0,0,1,0,349,683,1,0,"
-Line Tags = "3084,3444,"
+Window Z-Order = 1
+Source Window State = "1,2,2,2,44,45,44,0,0,163,0,2966,0,3085,55,56,0,0,2,2,349,683,1,0,"
+Line Tags = "3084,3449,"
 
 [File 0005]
 Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
@@ -112,17 +107,18 @@ Window Top = 343
 Window Left = 162
 Window Height = 349
 Window Width = 683
-Window Z-Order = 1
+Window Z-Order = 2
 
 [File 0006]
 Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
 Path Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3 Definitions.h"
 File Type = "Include"
-Disk Date = 3521305844
+Disk Date = 3526985207
 In Projects = "1,2,"
 Window Top = 95
 Window Left = 34
-Source Window State = "1,42,42,42,8,41,41,0,3,0,0,0,0,0,0,0,0,0,42,8,349,683,1,29,"
+Window Z-Order = 4
+Source Window State = "1,181,181,181,0,46,46,0,0,76,0,0,0,0,0,25,38,0,187,38,349,683,1,29,"
 
 [File 0007]
 Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
@@ -132,29 +128,21 @@ Disk Date = 3510071205
 In Projects = "1,2,"
 Window Top = 33
 Window Left = 10
-Source Window State = "1,9,9,9,4,20,20,0,3,0,0,0,0,0,0,0,0,0,9,4,349,683,1,0,"
+Window Z-Order = 7
+Source Window State = "1,9,9,9,4,20,20,0,0,76,0,0,0,0,0,25,0,0,26,60,349,683,1,0,"
 
 [File 0008]
 Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
-Path Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3.h"
-File Type = "Include"
-Disk Date = 3525698493
-In Projects = "1,"
-Window Top = 188
-Window Left = 90
-Source Window State = "1,156,156,156,9,33,33,0,3,0,0,0,0,0,0,0,118,0,156,9,349,683,1,0,"
-
-[File 0009]
-Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
 Path Line0002 = "oris 3/Boris 3/Boris 3/Galil Commands/Galil Commands.h"
 File Type = "Include"
-Disk Date = 3511695488
+Disk Date = 3526985212
 In Projects = "1,"
 Window Top = 32
 Window Left = 10
-Source Window State = "1,110,115,110,0,0,0,0,3,0,0,0,0,0,0,0,60,0,115,0,349,683,1,0,"
+Window Z-Order = 3
+Source Window State = "1,110,115,110,0,0,0,0,0,76,0,0,0,0,0,25,0,0,99,72,349,683,1,0,"
 
-[File 0010]
+[File 0009]
 Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
 Path Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3 Utilities.c"
 File Type = "CSource"
@@ -162,98 +150,21 @@ Disk Date = 3525698493
 In Projects = "1,2,"
 Window Top = 250
 Window Left = 122
-Source Window State = "1,2364,2364,2364,13,39,39,0,0,0,0,1603,0,1613,33,0,1787,0,1818,43,349,683,1,0,"
+Window Z-Order = 6
+Source Window State = "1,2364,2364,2364,13,39,39,0,0,76,0,1603,0,1613,33,25,0,0,7,6,349,683,1,0,"
 
-[File 0011]
+[File 0010]
 Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
 Path Line0002 = "oris 3/Boris 3/Boris 3/Galil Commands/Galil Commands.c"
 File Type = "CSource"
-Disk Date = 3511773808
+Disk Date = 3527008623
 In Projects = "1,"
 Window Top = 92
 Window Left = 42
-Source Window State = "1,274,274,274,30,31,30,0,0,0,0,294,0,203,22,0,0,0,0,0,349,683,1,0,"
+Window Z-Order = 5
+Source Window State = "1,76,76,76,25,39,39,0,0,76,0,92,0,204,22,25,91,0,117,46,349,683,1,21,"
 
-[File 0012]
-Path = "/c/Users/Program Files (x86)/Galil/dmc32osu/lib/x64/DMC32.lib"
-File Type = "Library"
-Disk Date = 0
-In Projects = "1,"
-
-[File 0013]
-Path = "/c/Users/Program Files/Doyle Solutions Utilities/DSUtilities.lib"
-File Type = "Library"
-Disk Date = 0
-In Projects = "1,2,"
-
-[File 0014]
-Path = "/c/Program Files (x86)/National Instruments/CVI2013/sdk/lib/msvc64/Version.lib"
-File Type = "Library"
-Disk Date = 3486517200
-In Projects = "1,2,"
-
-[File 0015]
-Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
-Path Line0002 = "oris 3/Boris 3/Boris 3/Boris 3 Galil Info.txt"
-File Type = "Unknown"
-Disk Date = 3508347941
-In Projects = "1,"
-Window Top = 64
-Window Left = 26
-
-[File 0016]
-Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
-Path Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3.ini"
-File Type = "Unknown"
-Disk Date = 3521128669
-In Projects = "1,"
-Window Top = 33
-Window Left = 10
-
-[File 0017]
-Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
-Path Line0002 = "oris 3/Boris 3/Boris 3/Galil Commands/Galil Commands.dmc"
-File Type = "Unknown"
-Disk Date = 3511694767
-In Projects = "1,"
-Window Top = 33
-Window Left = 10
-
-[File 0018]
-Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
-Path Line0002 = "oris 3/Boris 3/Boris 3/registry.xml"
-File Type = "Unknown"
-Disk Date = 3507749962
-In Projects = "1,"
-Window Top = 182
-Window Left = 90
-
-[File 0019]
-Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
-Path Line0002 = "oris 3/Boris 3/Boris 3/Sim Thermal.thd"
-File Type = "Unknown"
-Disk Date = 3510075467
-In Projects = "1,"
-Window Top = 33
-Window Left = 10
-
-[File 0020]
-Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
-Path Line0002 = "oris 3/Boris 3/Boris 3/Sim Translate.trd"
-File Type = "Unknown"
-Disk Date = 3507055009
-In Projects = "1,"
-
-[File 0021]
-Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
-Path Line0002 = "oris 3/Boris 3/Boris 3/ToDo Notes.txt"
-File Type = "Unknown"
-Disk Date = 0
-In Projects = "1,"
-Window Top = 33
-Window Left = 10
-
-[File 0022]
+[File 0011]
 Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
 Path Line0002 = "oris 3/Boris 3/Boris 3 Procedure Editor/Boris 3 Procedure Editor.uir"
 File Type = "User Interface Resource"
@@ -263,6 +174,96 @@ Window Top = 405
 Window Left = 194
 Window Height = 349
 Window Width = 683
+Window Z-Order = 8
+
+[File 0012]
+Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Path Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3.h"
+File Type = "Include"
+Disk Date = 3525698493
+In Projects = "1,"
+Window Top = 188
+Window Left = 90
+Source Window State = "1,156,156,156,9,33,33,0,3,0,0,0,0,0,0,0,118,0,156,9,349,683,1,0,"
+
+[File 0013]
+Path = "/c/Program Files (x86)/Galil/dmc32osu/lib/x64/DMC32.lib"
+File Type = "Library"
+Disk Date = 3498844302
+In Projects = "1,"
+
+[File 0014]
+Path = "/c/Program Files/Doyle Solutions Utilities/DSUtilities.lib"
+File Type = "Library"
+Disk Date = 3511694226
+In Projects = "1,2,"
+
+[File 0015]
+Path = "/c/Program Files (x86)/Windows Kits/8.1/Lib/winv6.3/um/x64/Version.Lib"
+File Type = "Library"
+Disk Date = 3459994290
+In Projects = "1,2,"
+
+[File 0016]
+Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Path Line0002 = "oris 3/Boris 3/Boris 3/Boris 3 Galil Info.txt"
+File Type = "Unknown"
+Disk Date = 3508347941
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+
+[File 0017]
+Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Path Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3.ini"
+File Type = "Unknown"
+Disk Date = 3527155305
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+
+[File 0018]
+Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Path Line0002 = "oris 3/Boris 3/Boris 3/Galil Commands/Galil Commands.dmc"
+File Type = "Unknown"
+Disk Date = 3511694767
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+
+[File 0019]
+Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Path Line0002 = "oris 3/Boris 3/Boris 3/registry.xml"
+File Type = "Unknown"
+Disk Date = 3507749962
+In Projects = "1,"
+Window Top = 182
+Window Left = 90
+
+[File 0020]
+Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Path Line0002 = "oris 3/Boris 3/Boris 3/Sim Thermal.thd"
+File Type = "Unknown"
+Disk Date = 3510075467
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+
+[File 0021]
+Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Path Line0002 = "oris 3/Boris 3/Boris 3/Sim Translate.trd"
+File Type = "Unknown"
+Disk Date = 3507055009
+In Projects = "1,"
+
+[File 0022]
+Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Path Line0002 = "oris 3/Boris 3/Boris 3/ToDo Notes.txt"
+File Type = "Unknown"
+Disk Date = 0
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
 
 [File 0023]
 Path Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
@@ -273,9 +274,9 @@ In Projects = "2,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
 [File 0024]
-Path = "/c/Program Files (x86)/National Instruments/CVI2013/sdk/lib/msvc64/Kernel32.lib"
+Path = "/c/Program Files (x86)/Windows Kits/8.1/Lib/winv6.3/um/x64/kernel32.Lib"
 File Type = "Library"
-Disk Date = 3486517200
+Disk Date = 3497027116
 In Projects = "2,"
 
 [Tab Order]
@@ -283,6 +284,18 @@ Tab 0001 Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufac
 Tab 0001 Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3.uir"
 Tab 0002 Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
 Tab 0002 Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3.c"
+Tab 0003 Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Tab 0003 Line0002 = "oris 3/Boris 3/Boris 3 Procedure Editor/Boris 3 Procedure Editor.uir"
+Tab 0004 Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Tab 0004 Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3 Utilities.h"
+Tab 0005 Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Tab 0005 Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3 Utilities.c"
+Tab 0006 Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Tab 0006 Line0002 = "oris 3/Boris 3/Boris 3/Galil Commands/Galil Commands.c"
+Tab 0007 Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Tab 0007 Line0002 = "oris 3/Boris 3/Boris 3/BORIS 3 Definitions.h"
+Tab 0008 Line0001 = "/c/Users/michaelp/OneDrive/OneDrive - Applied Fiber Manufacturing/1222 - Boris/B"
+Tab 0008 Line0002 = "oris 3/Boris 3/Boris 3/Galil Commands/Galil Commands.h"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

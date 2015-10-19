@@ -1,0 +1,68 @@
+[B3_GetLastError]
+Class="Function"
+Prototype="void B3_GetLastError(struct b3LastError *lastError);"
+
+[B3_LoadIni]
+Class="Function"
+Prototype="int B3_LoadIni(char *path, struct b3SystemInfo *system);"
+
+[B3_SaveIni]
+Class="Function"
+Prototype="int B3_SaveIni(char *path, struct b3SystemInfo *system);"
+
+[B3_LoadProcedure]
+Class="Function"
+Prototype="int B3_LoadProcedure(char *path, struct b3ProceduerInfo *procedure);"
+
+[B3_SaveProcedure]
+Class="Function"
+Prototype="int B3_SaveProcedure(char *path, struct b3ProceduerInfo *procedure);"
+
+[B3SystemLog]
+Class="Function"
+Prototype="int B3SystemLog(char *path, char *logMsg);"
+
+[B3SystemLogWithVargs]
+Class="Function"
+Prototype="int B3SystemLogWithVargs(char *path, const char *const fmt, ...);"
+
+[B3SystemErrorLog]
+Class="Function"
+Prototype="int B3SystemErrorLog(char *path, struct b3LastError *lastError);"
+
+[B3StationLog]
+Class="Function"
+Prototype="int B3StationLog(char *path, char *elapsedTimeStr, double roomTempInF, double setPointInF, double boxTempInF, double anchorTempInF, int state, int subState);"
+
+[B3TranslationLog]
+Class="Function"
+Prototype="int B3TranslationLog(char *path, double loadInPounds, double displacementInInches);"
+
+[B3StationSummaryLog]
+Class="Function"
+Prototype="int B3StationSummaryLog(const char *path, const struct b3SystemInfo *system, const int panelIndex, const int stationIndex);"
+
+[_LogError]
+Class="Function"
+Prototype="void _LogError(int error, char *func, int line, char *errorMsg);"
+
+[_LogErrorWithVargs]
+Class="Function"
+Prototype="void _LogErrorWithVargs(int error, char *func, int line, const char *const fmt, ...);"
+
+[B3_CalcProcedureChecksum]
+Class="Function"
+Prototype="unsigned long B3_CalcProcedureChecksum(char *path);"
+
+[CheckSumCalc]
+Class="Function"
+Prototype="int CheckSumCalc(void *outputDest, char *outputString);"
+
+[B3_LoadSimTranslateData]
+Class="Function"
+Prototype="int B3_LoadSimTranslateData(char *path, struct b3SimTranslateData *data);"
+
+[B3_LoadSimThermalData]
+Class="Function"
+Prototype="int B3_LoadSimThermalData(char *path, struct b3SimThermalData *data);"
+

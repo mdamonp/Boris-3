@@ -1,0 +1,70 @@
+REM Boris RIO Modbus Commands: 
+#SUPPORT
+SB ACTSTATION
+JS #RIOBUTTON 
+CB ACTSTATION
+CMDSTAT = 8  'Station Supported 
+EN 
+
+#RIOBUTTON
+WT 10;' wait a reasonable interval so we don't flood the network
+JP #remote,(@IN[ACTSTATION] = 0);'loop while input 1 on the remote device is high
+EN;' return to calling code.
+
+
+REM subroutine for establishing a modbus connection 
+REM to a device with IP address ip0.ip1.ip2.ip3
+REM ip0-ip3 are variables that must be defined 
+REM prior to call of subroutine
+#connect
+REM close H handle
+#close
+IHH= -2
+WT 100
+JP #close,_IHH2<>0
+REM open handle to IP address set by ip0-ip3
+REM modbus handle <502>2
+i= 0;fail= 0;'number of tries and fail flag
+REM make connection to RIO
+#con
+IHH= 192,168,123,247<502>2
+REM wait while attempting to establish TCP/IP handle
+#wtih;WT 10;JP #wtih,_IHH2=-6
+REM try 5 times, if not established, then indicated failure and stop
+i= i+1
+IF ((i=5)&(_IHH2=0))
+ 'fail= 1
+ MG "Failed Connection to ",192{F3.0},168,123,247
+ TH
+ENDIF
+JP #con,((_IHH2=0)&(fail=0))
+REM indicate if TCP connection was successful
+IF (_IHH2=-2)
+ MG "Connection established to ",192{F3.0},168,123,247
+ENDIF
+MW 1;'enable modbus wait functionality
+EN
+
+#TCPERR
+MG "TCPERR, Reconnecting to RIO - error code",_TC1
+JS #connect
+IF fail
+ MG "Connection to "192{F3.0},168,123,247," Failed"
+ MG "Stopping Program"
+ HX
+ENDIF
+RE
+
+#CMDERR
+MG "Command Error on line",_ED
+MG "Error",_TC
+IF ((_TC>=120)&(_TC<=129));'communication error
+ MG "Communication Error, Reconnecting to RIO"
+ JS #connect
+ IF fail
+  MG "Connection to ",192{F3.0},168,123,247," Failed"
+  MG "Stopping Program"
+  HX
+ ENDIF
+ENDIF
+RE

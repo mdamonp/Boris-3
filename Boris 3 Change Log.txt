@@ -1,0 +1,23 @@
+BORIS 3.c CHANGE LOG 
+
+**********************************
+********* Needed Changes: ********
+in Boris3.c: Add station calculation: StationNum = (PanelID-1)*4 +StationID [L3250]
+		   : Add StationNum to Galil Call
+in Galil.c  Edit [L195]
+			*Update Header File 
+**********************************
+			
+10/6/15 - By Michael Prutsman
+			* all Line #s from Original "Boris 3.c" Unless otherwise noted
+			
+		Added: Declaration of stationNum as double at [L3213]
+		Added: Declaration of stationNum into typedef struct b3LoadLimitTranslateMethodInfo in "Boris 3 Definitions.h" [L187]
+		Added: Calculation of stationNum to Translation Type Methods [L3221 & L3228] 
+		Added: stationNum to Galil Call [L3256]
+		Changed: Size of dArgArray from 3 to 4 in Galil Commands.c [L191]
+		Added: stationNum as const double to int DLLEXPORT DLLSTDCALL GALIL_CMD_TranslateCmd in ""Galil Commands.c"
+				*Also made appropriate change in .h file 
+		Added: stationNum to dArgArray assignments in "Galil Commands.c" [L194] 
+		
+				

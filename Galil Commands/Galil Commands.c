@@ -167,7 +167,7 @@ int DLLEXPORT DLLSTDCALL GALIL_CMD_Close(void)
 	return(stat);
 }
 
-int DLLEXPORT DLLSTDCALL GALIL_CMD_TranslateCmd(int mode, const double velocityInIPM, const double distanceInInches, const double loadInPounds, const const double timeout, int* const cmdStat)
+int DLLEXPORT DLLSTDCALL GALIL_CMD_TranslateCmd(int mode, const double velocityInIPM, const double distanceInInches, const double loadInPounds, const double stationNum, const double timeout, int* const cmdStat)
 {
 	if (!gsGalilCommOpenned)
 	{
@@ -188,10 +188,11 @@ int DLLEXPORT DLLSTDCALL GALIL_CMD_TranslateCmd(int mode, const double velocityI
 			break;
 	}
 	
-	double dArgArray[3] = {0.0};
+	double dArgArray[4] = {0.0};
 	dArgArray[0] = velocityInIPM;
 	dArgArray[1] = distanceInInches;
 	dArgArray[2] = loadInPounds;
+	dArgArray[3] = stationNum; 
 	
 	int stat = _GALIL_SendCmdMsg(dmcCmd,
 							dArgArray,

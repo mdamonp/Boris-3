@@ -1,0 +1,45 @@
+-nologo
+-out:c:\Users\michaelp\OneDrive\OneDrive - Applied Fiber Manufacturing\1222 - Boris\Boris 3\Boris 3\Boris 3\cvibuild.BORIS 3\Debug64\BORIS 3 (DEBUG64).exe
+-arch:x64
+-timestamp
+-debug:2
+-res:c:\Users\michaelp\OneDrive\OneDrive - Applied Fiber Manufacturing\1222 - Boris\Boris 3\Boris 3\Boris 3\cvibuild.BORIS 3\Debug64\resources.res
+-entry:CVIWinMainStartupCodeForDebugging
+-base:0x400000
+-linked:c:\Users\michaelp\OneDrive\OneDrive - Applied Fiber Manufacturing\1222 - Boris\Boris 3\Boris 3\Boris 3\cvibuild.BORIS 3\Debug64\linkersummary.txt
+-dlldeps:c:\Users\michaelp\OneDrive\OneDrive - Applied Fiber Manufacturing\1222 - Boris\Boris 3\Boris 3\Boris 3\cvibuild.BORIS 3\Debug64\dlldependencies.txt
+-licensing:c:\Users\michaelp\OneDrive\OneDrive - Applied Fiber Manufacturing\1222 - Boris\Boris 3\Boris 3\Boris 3\cvibuild.BORIS 3\Debug64\linkerlicensing.txt
+-browsedeps:c:\Users\michaelp\OneDrive\OneDrive - Applied Fiber Manufacturing\1222 - Boris\Boris 3\Boris 3\Boris 3\cvibuild.BORIS 3\Debug64\moduledependencies.txt
+-stackreserve:1048576
+-stackcommit:4096
+-in:c:\Users\michaelp\OneDrive\OneDrive - Applied Fiber Manufacturing\1222 - Boris\Boris 3\Boris 3\Boris 3\cvibuild.BORIS 3\Debug64\BORIS 3 Utilities.obj
+-in:c:\Users\michaelp\OneDrive\OneDrive - Applied Fiber Manufacturing\1222 - Boris\Boris 3\Boris 3\Boris 3\cvibuild.BORIS 3\Debug64\BORIS 3.obj
+-in:c:\Users\michaelp\OneDrive\OneDrive - Applied Fiber Manufacturing\1222 - Boris\Boris 3\Boris 3\Boris 3\cvibuild.BORIS 3\Debug64\Galil Commands.obj
+-more:c:\program files (x86)\national instruments\cvi2015\bin\msvc64\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2015\bin\msvc64\cvi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64\advapi32.lib
+-more:c:\ProgramData\National Instruments\CVI2015\bin\msvc64\analysis.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\toolslib\toolbox\msvc64\asynctmr.obj
+-more:c:\Program Files (x86)\National Instruments\CVI2015\toolslib\toolbox\msvc64\asynctmr.obj
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc64\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc64\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc64\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc64\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc64\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc64\cvitdms.lib
+-more:c:\Program Files (x86)\Galil\dmc32osu\lib\x64\DMC32.lib
+-more:c:\Program Files\Doyle Solutions Utilities\DSUtilities.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc64\gpib.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\toolslib\toolbox\msvc64\inifile.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc64\ivi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc64\NIDAQmx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc64\nisyscfg.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc64\omp.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\toolslib\toolbox\msvc64\toolbox.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64\uuid.lib
+-more:c:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64\Version.Lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc64\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64\winmm.lib
