@@ -1,0 +1,6 @@
+Testing Notes for Experimental Galil Code:
+
+Changed Support condition requirements from | to &. Look for runaway support actuators
+Changed Machine Status update locations to allow Boris to end translation properly. Verify new states and complete operation.
+Changed when #support is called (after translation complete status update). Added 40ms to Support Wait time
+Moved around Machine Status before translation. Verify proper operation.

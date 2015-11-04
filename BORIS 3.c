@@ -1,6 +1,6 @@
-//#define INSTALL_THERMAL_SIMULATOR
-//#define INSTALL_TRANSLATOR_SIMULATOR
-//#define SIM_ASYNC_TIMER_PERIOD	0.1
+#define INSTALL_THERMAL_SIMULATOR
+#define INSTALL_TRANSLATOR_SIMULATOR
+#define SIM_ASYNC_TIMER_PERIOD	0.1		  
 
 #include "Galil Commands.h"
 #include <formatio.h>
@@ -99,6 +99,7 @@ static int gsNumDinDAQmxChannels = 0;
 
 static char gsLogDir[B3_MAX_PANEL_COUNT][B3_MAX_STATION_COUNT][MAX_PATHNAME_LEN] = {[0 ... (B3_MAX_PANEL_COUNT-1)][0 ... (B3_MAX_STATION_COUNT-1)][0 ... (MAX_PATHNAME_LEN-1)] = 0};
 static char gsLogPath[B3_MAX_PANEL_COUNT][B3_MAX_STATION_COUNT][MAX_PATHNAME_LEN] = {[0 ... (B3_MAX_PANEL_COUNT-1)][0 ... (B3_MAX_STATION_COUNT-1)][0 ... (MAX_PATHNAME_LEN-1)] = 0};
+static char gTranslateLogPath[MAX_PATHNAME_LEN] = {0} ;
 
 static int gsAppSetupChanged = 0;
 
@@ -3219,7 +3220,7 @@ int32 TempControlStateEngine(int operation, int panelIndex, int stationIndex)
 								velocityInIPS = gsSystem.panel[panelIndex].procedure.fixedLengthTranslationMethodInfo.velocityInIPS;
 								distanceInInches = gsSystem.panel[panelIndex].procedure.fixedLengthTranslationMethodInfo.displacementInInches;
 								loadInPounds = gsSystem.panel[panelIndex].procedure.fixedLengthTranslationMethodInfo.maxLoadLimitInPounts;
-								stationNum = (panelIndex * 4) + stationIndex - 1 ; // Calculates station #0-19 for 4-station panels
+								stationNum = (panelIndex * 4) + stationIndex ; // Calculates station #0-19 for 4-station panels
 								break;
 
 							default:
@@ -3227,7 +3228,7 @@ int32 TempControlStateEngine(int operation, int panelIndex, int stationIndex)
 								velocityInIPS = gsSystem.panel[panelIndex].procedure.loadLimitTranslateMethodInfo.velocityInIPS;
 								distanceInInches = gsSystem.panel[panelIndex].procedure.loadLimitTranslateMethodInfo.maxDisplacementInInches;
 								loadInPounds = gsSystem.panel[panelIndex].procedure.loadLimitTranslateMethodInfo.loadLimitInPounds;
-								stationNum = (panelIndex * 4) + stationIndex - 1 ; // Calculates station #0-19 for 4-station panels
+								stationNum = (panelIndex * 4) + stationIndex ; // Calculates station #0-19 for 4-station panels
 								break;
 
 						}
@@ -3247,6 +3248,9 @@ int32 TempControlStateEngine(int operation, int panelIndex, int stationIndex)
 
 						B3SystemLogWithVargs(gsAppLogPath, "Translation started for panel %d - station %d",
 											panelIndex+1, stationIndex+1);
+
+						strcpy(gTranslateLogPath, gsLogPath[panelIndex][stationIndex]);
+						strcat(gTranslateLogPath, ".tlg");
 
 #ifndef INSTALL_TRANSLATOR_SIMULATOR
 						//CmtGetLock (gsGalilAsyncThreadLock);
@@ -4277,6 +4281,8 @@ int CVICALLBACK GalilAsyncCallback(int reserved, int timerId, int event, void *c
 				GetCtrlVal(gsTranslatePnlHndl, TRANSL_PANEL_ID, &panelId);
 				break;
 
+			case GALIL_CMD_AUTO_JOGGING_TO_START_POSITION:
+			case GALIL_CMD_INSTALLING_TRANSLATOR_SUPPORT: 
 			case GALIL_CMD_HOMING:
 			case GALIL_CMD_MOVING_TO_POSITION:
 			case GALIL_CMD_JOGGING:
@@ -4325,17 +4331,17 @@ int CVICALLBACK GalilAsyncCallback(int reserved, int timerId, int event, void *c
 				}
 
 				{
-					char logPath[MAX_PATHNAME_LEN];
+					//char logPath[MAX_PATHNAME_LEN];
 
-					strcpy(logPath, gsLogPath[panelIndex][stationIndex]);
-					strcat(logPath, ".tlg");
+					//strcpy(logPath, gsLogPath[panelIndex][stationIndex]);
+					//strcat(logPath, ".tlg");
 
-					GetCtrlVal(gsTranslatePnlHndl, TRANSL_PANEL_ID, &panelId);
-					GetCtrlVal(gsTranslatePnlHndl, TRANSL_STATION_ID, &stationId);
-					panelIndex = panelId-1;
-					stationIndex = stationIndex-1;
+					//GetCtrlVal(gsTranslatePnlHndl, TRANSL_PANEL_ID, &panelId);
+					//GetCtrlVal(gsTranslatePnlHndl, TRANSL_STATION_ID, &stationId);
+					//panelIndex = panelId-1;
+					//stationIndex = stationIndex-1;
 
-					B3TranslationLog(logPath,
+					B3TranslationLog(gTranslateLogPath,
 									 loadInPounds,
 									 absolutePositionInInches);
 				}
@@ -4353,17 +4359,17 @@ int CVICALLBACK GalilAsyncCallback(int reserved, int timerId, int event, void *c
 					SetCtrlAttribute(gsTranslatePnlHndl, TRANSL_LOAD, ATTR_DIMMED, 0);
 					SetCtrlAttribute(gsTranslatePnlHndl, TRANSL_DISP, ATTR_DIMMED, 0);
 
-					char logPath[MAX_PATHNAME_LEN];
+					//char logPath[MAX_PATHNAME_LEN];
 
-					strcpy(logPath, gsLogPath[panelIndex][stationIndex]);
-					strcat(logPath, ".tlg");
+					//strcpy(logPath, gsLogPath[panelIndex][stationIndex]);
+					//strcat(logPath, ".tlg");
 
-					GetCtrlVal(gsTranslatePnlHndl, TRANSL_PANEL_ID, &panelId);
-					GetCtrlVal(gsTranslatePnlHndl, TRANSL_STATION_ID, &stationId);
-					panelIndex = panelId-1;
-					stationIndex = stationIndex-1;
+					//GetCtrlVal(gsTranslatePnlHndl, TRANSL_PANEL_ID, &panelId);
+					//GetCtrlVal(gsTranslatePnlHndl, TRANSL_STATION_ID, &stationId);
+					//panelIndex = panelId-1;
+					//stationIndex = stationIndex-1;
 
-					B3TranslationLog(logPath,
+					B3TranslationLog(gTranslateLogPath,
 									 loadInPounds,
 									 absolutePositionInInches);
 				}

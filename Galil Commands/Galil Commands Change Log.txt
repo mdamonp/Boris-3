@@ -46,3 +46,15 @@ BORIS 3 GALIL COMMANDS CHANGE LOG
 		- L487: Changed JP -> JS
 		- L496: Changed JP -> JS
 		- L896: Changed 0 -> 1
+
+	10/20/15 - By Michael Prutsman (V1.3.3)
+		- L311: Changed 8001 -> 8000
+		- L363: Changed 8001 -> 8000
+
+	10/22/15 - By Michael Prutsman
+		- Added #START subroutine to move translator up into position until load is sensed. 
+	
+	10/27/15 - By Michael Prutsman (V1.3.5)  
+		- #START has been removed for now and only translation support is implemented. 
+		- Rearranged the logic in TRANSB1 because limit trip was not triggering and system would just go idle
+		- Set up #TRANSB1 to trigger support as soon as _SCA<>0 

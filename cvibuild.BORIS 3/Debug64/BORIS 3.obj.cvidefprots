@@ -134,6 +134,42 @@ Prototype="void DeferredCallToB3StationControl(void *data);"
 Class="Function"
 Prototype="int CheckGalilCommConnection(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
 
+[ThermalSimulatorAsyncCallback]
+Class="Function"
+Prototype="int ThermalSimulatorAsyncCallback(int reserved, int timerId, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TranslatorSimulatorAsyncCallback]
+Class="Function"
+Prototype="int TranslatorSimulatorAsyncCallback(int reserved, int timerId, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SimTranslatorAtStation]
+Class="Function"
+Prototype="int SimTranslatorAtStation(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SimTranslatorReadyButton]
+Class="Function"
+Prototype="int SimTranslatorReadyButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SimPendantSwitch]
+Class="Function"
+Prototype="int SimPendantSwitch(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SimJogUp]
+Class="Function"
+Prototype="int SimJogUp(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SimJogDown]
+Class="Function"
+Prototype="int SimJogDown(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SimTranslatorStopButton]
+Class="Function"
+Prototype="int SimTranslatorStopButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SimTranslatorSupportButton]
+Class="Function"
+Prototype="int SimTranslatorSupportButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
 [CancelAuthorization]
 Class="Function"
 Prototype="int CancelAuthorization(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"

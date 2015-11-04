@@ -8,7 +8,7 @@ BEGIN
 END
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,12,2,2
+ FILEVERSION 1,12,2,12
  PRODUCTVERSION 1,12,2,0
  FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
  FILEFLAGS 0L
@@ -23,7 +23,7 @@ BEGIN
             VALUE "Comments", "Provided by Doyle Solutions, Inc.\0"
             VALUE "CompanyName", "Applied Fiber\0"
             VALUE "FileDescription", "BORIS 3 (Release x64)\0"
-            VALUE "FileVersion", "1.12.2.2\0"
+            VALUE "FileVersion", "1.12.2.12\0"
             VALUE "InternalName", "BORIS 3\0"
             VALUE "LegalCopyright", "Copyright © Applied Fiber 2015\0"
             VALUE "OriginalFilename", "BORIS 3.exe\0"
